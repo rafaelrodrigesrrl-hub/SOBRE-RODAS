@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa De Acessibilidade</title>
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#fffff' viewBox='0 0 16 16'><path d='M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016m6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0'/><path d='m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z'/></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <header class="header-container">
+        <div class="logo">
+            <a href="../../index.html" aria-label="Voltar para a página inicial SP Sobre Rodas"></a>
+                <img src="../IMG/sketch1794869266480.png" alt="cadeira de rodas" title="cadeira de rodas">
+            </a>
+        </div>
+
+        <nav class="nav-capsula" aria-label="Navegação principal">
+            <ul class="bar-navegacao">
+                <li><a href="../../index.html" class="botoes">Sobre o Projeto</a></li>
+                <li><a href="mapa.html" class="botoes">Mapa da Acessibilidade</a></li>
+                <li><a href="Palpite.html" class="botoes" aria-current="page">Relatos e Sugestões</a></li>
+                <li><a href="cadastro.html" class="botoes">Entrar</a></li>
+            </ul>
+        </nav>
+
+        <div class="busca-bootstrap">
+            <form class="d-flex" role="search" action="mapa.html" method="get">
+                <label for="busca-estacao" class="visually-hidden">Pesquisar Estação</label>
+                <input id="busca-estacao" class="form-control me-2" type="search" placeholder="Pesquisar Estação..." aria-label="Pesquisar Estação">
+                <button class="btn btn-outline-warning" type="submit" aria-label="Buscar estação">
+                    <i class="bi bi-search" aria-hidden="true"></i>
+                </button>
+            </form>
+        </div>
+    </header>
+
+<main>
+    <section id="catalogo">
+        <h2>Mapa Completo Malha do Transporte Metropolitano de São Paulo </h2>
+                <article class="mapa1">
+                    <img src="/ASSETS/IMG/METROCOMPLETO.jpg" alt="Mapa metro" title="Malha do Transporte Metropolitano de São Paulo" loading="lazy">
+                </article>
+
+            <h2>Linhas do Metrô e Trem</h2>
+            <h3>Guia de Acessibiliade e Ranking por linha.</h3>
+            <p>Para definir a pontuação (de 3.2 a 5.0) e a posição de cada estação no ranking, foram utilizados 5 critérios técnicos e de experiência do usuário voltados especificamente para pessoas com mobilidade reduzidas :</p>
+                    <ul class="criterios">
+                        <li> Redundância e Disponibilidade de Elevadores: Estações com dois ou mais elevadores por acesso/plataforma (comum nas linhas mais novas, como 4-Amarela e 5-Lilás) pontuaram mais alto do que estações antigas que dependem de um único equipamento, onde uma falha bloqueia todo o trajeto.</li>
+                        <li> Nivelamento e Vão entre Trem e Plataforma: Avaliação da presença de Portas de Plataforma (PSD) e plataformas retas, que reduzem o espaço e o desnível no embarque, garantindo autonomia sem necessidade de rampas móveis ou ajuda de agentes.</li>
+                        <li> Complexidade e Distância nas Baldeações: Estações com transferência no mesmo nível ou com esteiras rolantes planas (como Paraíso e Paulista/Consolação) receberam notas maiores do que estações com túneis longos e múltiplos níveis de mudança (como Sé ou Brás).</li>
+                        <li> Sinalização, Piso Tátil e Circulação Interna: Largura dos corredores, presença de rampas com inclinação adequada (norma ABNT NBR 9050), banheiros acessíveis e sinalização visual/tátil de alto contraste.</li>
+                        <li> Fluxo de Passageiros e Integração Externa: Impacto da superlotação nos horários de pico sobre o embarque de cadeirantes e facilidade de acesso nivelado entre a rua, terminais de ônibus e a estação.</li>
+                    </ul>
+
+                <div class="card-container">
+                <article class="card">
+                    <img src="/ASSETS/IMG/AZUL 1.png" alt="linha 1 azul metrosp" title="Mapa Linha 1 Azul" loading="lazy">
+                    <div class="tabela-wrapper">
+        <table class="tabela-acessibilidade">
+            <thead>
+                <tr>
+                    <th scope="col">Posição</th>
+                    <th scope="col">Estação</th>
+                    <th scope="col">Linha(s)</th>
+                    <th scope="col">Nota</th>
+                    <th scope="col">Status / Diferencial</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>20º</td>
+                    <td>Paraíso</td>
+                    <td>1-Azul / 2-Verde</td>
+                    <td><strong>4.8</strong></td>
+                    <td>Transferência no mesmo nível entre plataformas, referência na rede antiga</td>
+                </tr>
+                <tr>
+                    <td>47º</td>
+                    <td>Ana Rosa</td>
+                    <td>1-Azul / 2-Verde</td>
+                    <td><strong>4.5</strong></td>
+                    <td>Baldeação nivelada entre plataformas, com elevadores e terminal integrado</td>
+                </tr>
+                <tr>
+                    <td>52º</td>
+                    <td>Tucuruvi</td>
+                    <td>1-Azul</td>
+                    <td><strong>4.4</strong></td>
+                    <td>Portas de plataforma, elevadores operacionais e terminal integrado</td>
+                </tr>
+                <tr>
+                    <td>53º</td>
+                    <td>Jardim São Paulo-Ayrton Senna</td>
+                    <td>1-Azul</td>
+                    <td><strong>4.4</strong></td>
+                    <td>Portas de plataforma ativas, elevadores e fluxo tranquilo</td>
+                </tr>
+                <tr>
+                    <td>54º</td>
+                    <td>Santana</td>
+                    <td>1-Azul</td>
+                    <td><strong>4.3</strong></td>
+                    <td>Portas de plataforma e integração com terminal; fluxo alto nos horários de pico</td>
+                </tr>
+                <tr>
+                    <td>55º</td>
+                    <td>Jabaquara</td>
+                    <td>1-Azul</td>
+                    <td><strong>4.3</strong></td>
+                    <td>Portas de plataforma instaladas, elevadores ativos e terminal metropolitano</td>
+                </tr>
+                <tr>
+                    <td>56º</td>
+                    <td>Saúde-Ultrafarma</td>
+                    <td>1-Azul</td>
+                    <td><strong>4.2</strong></td>
+                    <td>Elevadores operacionais, piso tátil contínuo e portas de plataforma</td>
+                </tr>
+                <tr>
+                    <td>57º</td>
+                    <td>Praça da Árvore</td>
+                    <td>1-Azul</td>
+                    <td><strong>4.2</strong></td>
+                    <td>Acessibilidade por elevadores e rotas táteis completas</td>
+                </tr>
+                <tr>
+                    <td>58º</td>
+                    <td>Vila Mariana</td>
+                    <td>1-Azul</td>
+                    <td><strong>4.2</strong></td>
+                    <td>Integração com terminal de ônibus via elevadores e sinalização tátil</td>
+                </tr>
+                <tr>
+                    <td>59º</td>
+                    <td>Parada Inglesa</td>
+                    <td>1-Azul</td>
+                    <td><strong>4.2</strong></td>
+                    <td>Estação elevada com elevadores operacionais e fluxo moderado</td>
+                </tr>
+                <tr>
+                    <td>70º</td>
+                    <td>Vergueiro</td>
+                    <td>1-Azul</td>
+                    <td><strong>4.1</strong></td>
+                    <td>Elevadores ativos e piso tátil; fluxo intenso de estudantes</td>
+                </tr>
+                <tr>
+                    <td>71º</td>
+                    <td>São Joaquim</td>
+                    <td>1-Azul</td>
+                    <td><strong>4.1</strong></td>
+                    <td>Elevadores operacionais e piso tátil contínuo</td>
+                </tr>
+                <tr>
+                    <td>72º</td>
+                    <td>Japão-Liberdade</td>
+                    <td>1-Azul</td>
+                    <td><strong>4.0</strong></td>
+                    <td>Elevadores ativos; atenção ao fluxo muito alto nos fins de semana</td>
+                </tr>
+                <tr>
+                    <td>73º</td>
+                    <td>São Bento</td>
+                    <td>1-Azul</td>
+                    <td><strong>4.0</strong></td>
+                    <td>Múltiplos níveis atendidos por elevadores dedicados</td>
+                </tr>
+                <tr>
+                    <td>74º</td>
+                    <td>Tiradentes</td>
+                    <td>1-Azul</td>
+                    <td><strong>4.0</strong></td>
+                    <td>Elevadores operacionais e fluxo tranquilo</td>
+                </tr>
+                <tr>
+                    <td>75º</td>
+                    <td>Luz</td>
+                    <td>1-Azul / 4-Amarela / 7-Rubi / 11-Coral</td>
+                    <td><strong>4.0</strong></td>
+                    <td>Possui elevadores em todos os níveis, mas o trajeto entre linhas é longo</td>
+                </tr>
+                <tr>
+                    <td>77º</td>
+                    <td>Armênia</td>
+                    <td>1-Azul</td>
+                    <td><strong>3.9</strong></td>
+                    <td>Acesso adaptado por elevadores, atenção ao entorno</td>
+                </tr>
+                <tr>
+                    <td>78º</td>
+                    <td>Portuguesa-Tietê</td>
+                    <td>1-Azul</td>
+                    <td><strong>3.9</strong></td>
+                    <td>Grande fluxo de bagagens na ligação com o terminal rodoviário</td>
+                </tr>
+                <tr>
+                    <td>79º</td>
+                    <td>Carandiru</td>
+                    <td>1-Azul</td>
+                    <td><strong>3.9</strong></td>
+                    <td>Elevadores ativos e plataforma elevada com piso tátil</td>
+                </tr>
+                <tr>
+                    <td>80º</td>
+                    <td>Conceição</td>
+                    <td>1-Azul</td>
+                    <td><strong>3.9</strong></td>
+                    <td>Elevadores operacionais e fluxo corporativo intenso</td>
+                </tr>
+                <tr>
+                    <td>81º</td>
+                    <td>São Judas</td>
+                    <td>1-Azul</td>
+                    <td><strong>3.9</strong></td>
+                    <td>Adaptação com elevadores e sinalização tátil</td>
+                </tr>
+                <tr>
+                    <td>85º</td>
+                    <td>Sé</td>
+                    <td>1-Azul / 3-Vermelha</td>
+                    <td><strong>3.4</strong></td>
+                    <td>Maior fluxo da rede; baldeação longa e elevadores únicos por setor</td>
+                </tr>
+            </tbody>
+        </table>
+                </article>
+                
+                <article class="card">
+                    <img src="/ASSETS/IMG/verde2.jpg" alt="linha 2 verde metrosp" title="Mapa Linha 2 Verde" loading="lazy">
+                    <div class="tabela-wrapper">
+        <table class="tabela-acessibilidade">
+            <thead>
+                <tr>
+                    <th scope="col">Posição</th>
+                    <th scope="col">Estação</th>
+                    <th scope="col">Linha(s)</th>
+                    <th scope="col">Nota</th>
+                    <th scope="col">Status / Diferencial</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>21º</td>
+                    <td>Vila Prudente</td>
+                    <td>2-Verde / 15-Prata</td>
+                    <td><strong>4.8</strong></td>
+                    <td>Integração moderna por elevadores amplos e portas de plataforma</td>
+                </tr>
+                <tr>
+                    <td>33º</td>
+                    <td>Santos-Imigrantes</td>
+                    <td>2-Verde</td>
+                    <td><strong>4.7</strong></td>
+                    <td>Elevadores amplos, portas de plataforma e fluxo moderado</td>
+                </tr>
+                <tr>
+                    <td>34º</td>
+                    <td>Alto do Ipiranga</td>
+                    <td>2-Verde</td>
+                    <td><strong>4.7</strong></td>
+                    <td>Portas de plataforma ativas, elevadores operacionais e piso tátil</td>
+                </tr>
+                <tr>
+                    <td>35º</td>
+                    <td>Sacomã</td>
+                    <td>2-Verde</td>
+                    <td><strong>4.7</strong></td>
+                    <td>Integração nivelada com terminal Expresso Tiradentes e portas automáticas</td>
+                </tr>
+                <tr>
+                    <td>42º</td>
+                    <td>Santuário N. S. de Fátima-Sumaré</td>
+                    <td>2-Verde</td>
+                    <td><strong>4.6</strong></td>
+                    <td>Elevadores de grande curso operacionais e portas de plataforma</td>
+                </tr>
+                <tr>
+                    <td>43º</td>
+                    <td>Vila Madalena</td>
+                    <td>2-Verde</td>
+                    <td><strong>4.6</strong></td>
+                    <td>Terminal integrado com rampas suaves, elevadores e portas de plataforma</td>
+                </tr>
+                <tr>
+                    <td>44º</td>
+                    <td>Clínicas</td>
+                    <td>2-Verde</td>
+                    <td><strong>4.6</strong></td>
+                    <td>Acesso adaptado ao complexo hospitalar com elevadores e portas automáticas</td>
+                </tr>
+                <tr>
+                    <td>45º</td>
+                    <td>Trianon-Masp</td>
+                    <td>2-Verde</td>
+                    <td><strong>4.5</strong></td>
+                    <td>Portas de plataforma ativas e elevadores operacionais na Av. Paulista</td>
+                </tr>
+                <tr>
+                    <td>46º</td>
+                    <td>Brigadeiro</td>
+                    <td>2-Verde</td>
+                    <td><strong>4.5</strong></td>
+                    <td>Portas de plataforma instaladas e rotas acessíveis até a superfície</td>
+                </tr>
+                <tr>
+                    <td>48º</td>
+                    <td>Tamanduateí</td>
+                    <td>2-Verde / 10-Turquesa</td>
+                    <td><strong>4.5</strong></td>
+                    <td>Estação elevada moderna com elevadores amplos entre metrô e trem</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+                </article>
+
+                <article class="card">
+                    <img src="/ASSETS/IMG/LINHA3.webp" alt="Linha 3 vermelha" title="Mapa Linha 3 vermelha" loading="lazy">
+                    <div class="tabela-wrapper">
+        <table class="tabela-acessibilidade">
+            <thead>
+                <tr>
+                    <th scope="col">Posição</th>
+                    <th scope="col">Estação</th>
+                    <th scope="col">Linha(s)</th>
+                    <th scope="col">Nota</th>
+                    <th scope="col">Status / Diferencial</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>49º</td>
+                    <td>Tatuapé</td>
+                    <td>3-Vermelha / 11-Coral / 12-Safira</td>
+                    <td><strong>4.5</strong></td>
+                    <td>Elevadores em todas as plataformas e acesso nivelado aos shoppings</td>
+                </tr>
+                <tr>
+                    <td>50º</td>
+                    <td>Corinthians-Itaquera</td>
+                    <td>3-Vermelha / 11-Coral</td>
+                    <td><strong>4.5</strong></td>
+                    <td>Rampas amplas, elevadores e ligação nivelada com terminal e arena</td>
+                </tr>
+                <tr>
+                    <td>51º</td>
+                    <td>Palmeiras-Barra Funda</td>
+                    <td>3-Vermelha / 7-Rubi / 8-Diamante</td>
+                    <td><strong>4.4</strong></td>
+                    <td>Grande hub com elevadores e rampas; exige atenção nas distâncias</td>
+                </tr>
+                <tr>
+                    <td>60º</td>
+                    <td>Guilhermina-Esperança</td>
+                    <td>3-Vermelha</td>
+                    <td><strong>4.2</strong></td>
+                    <td>Portas de plataforma ativas, elevadores operacionais e acesso nivelado</td>
+                </tr>
+                <tr>
+                    <td>61º</td>
+                    <td>Vila Matilde</td>
+                    <td>3-Vermelha</td>
+                    <td><strong>4.2</strong></td>
+                    <td>Portas de plataforma, elevadores ativos e integração com terminal</td>
+                </tr>
+                <tr>
+                    <td>62º</td>
+                    <td>Penha</td>
+                    <td>3-Vermelha</td>
+                    <td><strong>4.2</strong></td>
+                    <td>Portas de plataforma ativas, elevadores e rampas NBR 9050</td>
+                </tr>
+                <tr>
+                    <td>63º</td>
+                    <td>Carrão-Assaí Atacadista</td>
+                    <td>3-Vermelha</td>
+                    <td><strong>4.2</strong></td>
+                    <td>Portas de plataforma, elevadores operacionais e ligação com terminal</td>
+                </tr>
+                <tr>
+                    <td>64º</td>
+                    <td>Belém</td>
+                    <td>3-Vermelha</td>
+                    <td><strong>4.2</strong></td>
+                    <td>Portas de plataforma instaladas, elevadores ativos e acesso amplo</td>
+                </tr>
+                <tr>
+                    <td>65º</td>
+                    <td>Artur Alvim</td>
+                    <td>3-Vermelha</td>
+                    <td><strong>4.1</strong></td>
+                    <td>Portas de plataforma, elevadores operacionais e passarela acessível</td>
+                </tr>
+                <tr>
+                    <td>66º</td>
+                    <td>Patriarca-Vila Ré</td>
+                    <td>3-Vermelha</td>
+                    <td><strong>4.1</strong></td>
+                    <td>Portas de plataforma ativas, elevadores e fluxo moderado</td>
+                </tr>
+                <tr>
+                    <td>67º</td>
+                    <td>Marechal Deodoro</td>
+                    <td>3-Vermelha</td>
+                    <td><strong>4.1</strong></td>
+                    <td>Elevadores operacionais e plataformas sobrepostas com sinalização tátil</td>
+                </tr>
+                <tr>
+                    <td>68º</td>
+                    <td>Santa Cecília</td>
+                    <td>3-Vermelha</td>
+                    <td><strong>4.1</strong></td>
+                    <td>Elevadores ativos, piso tátil contínuo e terminal de ônibus próximo</td>
+                </tr>
+                <tr>
+                    <td>69º</td>
+                    <td>Anhangabaú</td>
+                    <td>3-Vermelha</td>
+                    <td><strong>4.1</strong></td>
+                    <td>Elevadores operacionais e ligação nivelada com terminal Bandeira</td>
+                </tr>
+                <tr>
+                    <td>76º</td>
+                    <td>República</td>
+                    <td>3-Vermelha / 4-Amarela</td>
+                    <td><strong>4.0</strong></td>
+                    <td>Portas de plataforma ativas; atenção ao fluxo intenso nos horários de pico</td>
+                </tr>
+                <tr>
+                    <td>82º</td>
+                    <td>Brás</td>
+                    <td>3-Vermelha / 10-Turquesa / 11-Coral / 12-Safira</td>
+                    <td><strong>3.8</strong></td>
+                    <td>Baldeação muito complexa e superlotada; elevadores sofrem alta demanda</td>
+                </tr>
+                <tr>
+                    <td>83º</td>
+                    <td>Bresser-Mooca</td>
+                    <td>3-Vermelha</td>
+                    <td><strong>3.7</strong></td>
+                    <td>Elevador único por plataforma; exige atenção em caso de manutenção</td>
+                </tr>
+                <tr>
+                    <td>84º</td>
+                    <td>Pedro II</td>
+                    <td>3-Vermelha</td>
+                    <td><strong>3.7</strong></td>
+                    <td>Plataforma elevada com elevadores operacionais e piso tátil</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+                </article>
+
+                <article class="card">
+                    <img src="/ASSETS/IMG/LINHA4.webp" alt="Linha 4 amarela" title="Mapa Linha 4 Amarela" loading="lazy">
+                    <div class="tabela-wrapper">
+        <table class="tabela-acessibilidade">
+            <thead>
+                <tr>
+                    <th scope="col">Posição</th>
+                    <th scope="col">Estação</th>
+                    <th scope="col">Linha(s)</th>
+                    <th scope="col">Nota</th>
+                    <th scope="col">Status / Diferencial</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1º</td>
+                    <td>Paulista / Consolação</td>
+                    <td>4-Amarela / 2-Verde</td>
+                    <td><strong>5.0</strong></td>
+                    <td>Esteiras rolantes planas, portas de plataforma e múltiplos elevadores</td>
+                </tr>
+                <tr>
+                    <td>2º</td>
+                    <td>Fradique Coutinho</td>
+                    <td>4-Amarela</td>
+                    <td><strong>5.0</strong></td>
+                    <td>Elevadores redundantes, vão mínimo e sinalização tátil exemplar</td>
+                </tr>
+                <tr>
+                    <td>3º</td>
+                    <td>Oscar Freire</td>
+                    <td>4-Amarela</td>
+                    <td><strong>5.0</strong></td>
+                    <td>Acessibilidade integral, portas automáticas e fluxo organizado</td>
+                </tr>
+                <tr>
+                    <td>4º</td>
+                    <td>Higienópolis-Mackenzie</td>
+                    <td>4-Amarela</td>
+                    <td><strong>5.0</strong></td>
+                    <td>Elevadores de grande capacidade e embarque totalmente nivelado</td>
+                </tr>
+                <tr>
+                    <td>5º</td>
+                    <td>Faria Lima</td>
+                    <td>4-Amarela</td>
+                    <td><strong>4.9</strong></td>
+                    <td>Portas de plataforma, elevadores rápidos e integração nivelada com terminal</td>
+                </tr>
+                <tr>
+                    <td>6º</td>
+                    <td>Butantã</td>
+                    <td>4-Amarela</td>
+                    <td><strong>4.9</strong></td>
+                    <td>Acesso direto ao terminal de ônibus com rampas e elevadores duplicados</td>
+                </tr>
+                <tr>
+                    <td>7º</td>
+                    <td>Vila Sônia</td>
+                    <td>4-Amarela</td>
+                    <td><strong>4.9</strong></td>
+                    <td>Estação recente com 100% de adequação à NBR 9050 e terminal integrado</td>
+                </tr>
+                <tr>
+                    <td>8º</td>
+                    <td>São Paulo-Morumbi</td>
+                    <td>4-Amarela</td>
+                    <td><strong>4.9</strong></td>
+                    <td>Múltiplos elevadores, portas de plataforma e conexão com terminal de ônibus</td>
+                </tr>
+                <tr>
+                    <td>32º</td>
+                    <td>Pinheiros</td>
+                    <td>4-Amarela / 9-Esmeralda</td>
+                    <td><strong>4.7</strong></td>
+                    <td>Elevadores de grande capacidade na integração entre metrô e trem</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+                </article>
+                    
+                <article class="card">
+                    <img src="/ASSETS/IMG/LINHA5.jpg" alt="Linha 5 Lilas" title="Mapa Linha 5 Lilás" loading="lazy">
+                    <div class="tabela-wrapper">
+        <table class="tabela-acessibilidade">
+            <thead>
+                <tr>
+                    <th scope="col">Posição</th>
+                    <th scope="col">Estação</th>
+                    <th scope="col">Linha(s)</th>
+                    <th scope="col">Nota</th>
+                    <th scope="col">Status / Diferencial</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>9º</td>
+                    <td>Brooklin</td>
+                    <td>5-Lilás</td>
+                    <td><strong>4.9</strong></td>
+                    <td>Portas de plataforma, elevadores redundantes e corredores amplos</td>
+                </tr>
+                <tr>
+                    <td>10º</td>
+                    <td>Campo Belo</td>
+                    <td>5-Lilás</td>
+                    <td><strong>4.9</strong></td>
+                    <td>Infraestrutura moderna com sinalização de alto contraste e piso tátil</td>
+                </tr>
+                <tr>
+                    <td>11º</td>
+                    <td>AACD-Servidor</td>
+                    <td>5-Lilás</td>
+                    <td><strong>4.9</strong></td>
+                    <td>Projetada para alta demanda PCR/PMR, com elevadores amplos e rotas curtas</td>
+                </tr>
+                <tr>
+                    <td>12º</td>
+                    <td>Hospital São Paulo</td>
+                    <td>5-Lilás</td>
+                    <td><strong>4.9</strong></td>
+                    <td>Acesso nivelado ao complexo hospitalar e portas de plataforma</td>
+                </tr>
+                <tr>
+                    <td>13º</td>
+                    <td>Eucaliptos</td>
+                    <td>5-Lilás</td>
+                    <td><strong>4.9</strong></td>
+                    <td>Portas de plataforma, elevadores redundantes e embarque nivelado</td>
+                </tr>
+                <tr>
+                    <td>14º</td>
+                    <td>Moema</td>
+                    <td>5-Lilás</td>
+                    <td><strong>4.9</strong></td>
+                    <td>Sinalização tátil completa, portas automáticas e elevadores de alta capacidade</td>
+                </tr>
+                <tr>
+                    <td>15º</td>
+                    <td>Borba Gato</td>
+                    <td>5-Lilás</td>
+                    <td><strong>4.8</strong></td>
+                    <td>Acessibilidade integral com rotas curtas e portas de plataforma</td>
+                </tr>
+                <tr>
+                    <td>16º</td>
+                    <td>Alto da Boa Vista</td>
+                    <td>5-Lilás</td>
+                    <td><strong>4.8</strong></td>
+                    <td>Elevadores duplicados, piso tátil contínuo e baixo fluxo</td>
+                </tr>
+                <tr>
+                    <td>17º</td>
+                    <td>Adolfo Pinheiro</td>
+                    <td>5-Lilás</td>
+                    <td><strong>4.8</strong></td>
+                    <td>Portas de plataforma ativas, elevadores amplos e boa sinalização</td>
+                </tr>
+                <tr>
+                    <td>18º</td>
+                    <td>Santa Cruz</td>
+                    <td>5-Lilás / 1-Azul</td>
+                    <td><strong>4.8</strong></td>
+                    <td>Baldeação bem sinalizada com elevadores dedicados entre as duas linhas</td>
+                </tr>
+                <tr>
+                    <td>19º</td>
+                    <td>Chácara Klabin</td>
+                    <td>5-Lilás / 2-Verde</td>
+                    <td><strong>4.8</strong></td>
+                    <td>Transferência rápida e nivelada com portas automáticas nas duas linhas</td>
+                </tr>
+                <tr>
+                    <td>36º</td>
+                    <td>Giovanni Gronchi</td>
+                    <td>5-Lilás</td>
+                    <td><strong>4.6</strong></td>
+                    <td>Integração com terminal João Dias por passarela nivelada e elevadores</td>
+                </tr>
+                <tr>
+                    <td>37º</td>
+                    <td>Vila das Belezas</td>
+                    <td>5-Lilás</td>
+                    <td><strong>4.6</strong></td>
+                    <td>Elevadores ativos, portas de plataforma e fluxo moderado</td>
+                </tr>
+                <tr>
+                    <td>38º</td>
+                    <td>Campo Limpo</td>
+                    <td>5-Lilás</td>
+                    <td><strong>4.6</strong></td>
+                    <td>Acessibilidade completa com elevadores e sinalização tátil</td>
+                </tr>
+                <tr>
+                    <td>39º</td>
+                    <td>Capão Redondo</td>
+                    <td>5-Lilás</td>
+                    <td><strong>4.6</strong></td>
+                    <td>Integração com terminal de ônibus e elevadores de alta capacidade</td>
+                </tr>
+                <tr>
+                    <td>40º</td>
+                    <td>Santo Amaro</td>
+                    <td>5-Lilás / 9-Esmeralda</td>
+                    <td><strong>4.6</strong></td>
+                    <td>Passarela larga com elevadores conectando as duas linhas</td>
+                </tr>
+                <tr>
+                    <td>41º</td>
+                    <td>Largo Treze</td>
+                    <td>5-Lilás</td>
+                    <td><strong>4.6</strong></td>
+                    <td>Elevadores operacionais e integração nivelada com terminal de ônibus</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+                </article>
+
+                <article class="card">
+                    <img src="/ASSETS/IMG/LINHA7.jpg" alt="Linha 7 rubi" title="Mapa Linha 7 Rubi" loading="lazy">
+                    <div class="tabela-wrapper">
+        <table class="tabela-acessibilidade">
+            <thead>
+                <tr>
+                    <th scope="col">Posição</th>
+                    <th scope="col">Estação</th>
+                    <th scope="col">Linha(s)</th>
+                    <th scope="col">Nota</th>
+                    <th scope="col">Status / Diferencial</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>162º</td>
+                    <td>Francisco Morato</td>
+                    <td>7-Rubi</td>
+                    <td><strong>4.2</strong></td>
+                    <td>Nova estrutura com rampas suaves, elevadores e integração ao terminal</td>
+                </tr>
+                <tr>
+                    <td>163º</td>
+                    <td>Franco da Rocha</td>
+                    <td>7-Rubi</td>
+                    <td><strong>4.1</strong></td>
+                    <td>Estação modernizada com elevadores e passarela acessível</td>
+                </tr>
+                <tr>
+                    <td>164º</td>
+                    <td>Várzea Paulista</td>
+                    <td>7-Rubi</td>
+                    <td><strong>4.0</strong></td>
+                    <td>Elevadores ativos e piso tátil contínuo</td>
+                </tr>
+                <tr>
+                    <td>165º</td>
+                    <td>Jundiaí</td>
+                    <td>7-Rubi</td>
+                    <td><strong>4.0</strong></td>
+                    <td>Terminal final com elevadores operacionais e integração de ônibus</td>
+                </tr>
+                <tr>
+                    <td>166º</td>
+                    <td>Campo Limpo Paulista</td>
+                    <td>7-Rubi</td>
+                    <td><strong>3.9</strong></td>
+                    <td>Elevadores operacionais e acesso adaptado</td>
+                </tr>
+                <tr>
+                    <td>167º</td>
+                    <td>Botujuru</td>
+                    <td>7-Rubi</td>
+                    <td><strong>3.8</strong></td>
+                    <td>Rampas dentro da norma e apoio operacional no embarque</td>
+                </tr>
+                <tr>
+                    <td>168º</td>
+                    <td>Baltazar Fidélis</td>
+                    <td>7-Rubi</td>
+                    <td><strong>3.9</strong></td>
+                    <td>Elevadores ativos e sinalização tátil</td>
+                </tr>
+                <tr>
+                    <td>169º</td>
+                    <td>Caieiras</td>
+                    <td>7-Rubi</td>
+                    <td><strong>3.8</strong></td>
+                    <td>Conta com elevadores e piso tátil, mas possui vão moderado no embarque</td>
+                </tr>
+                <tr>
+                    <td>170º</td>
+                    <td>Perus</td>
+                    <td>7-Rubi</td>
+                    <td><strong>3.8</strong></td>
+                    <td>Elevadores operacionais; fluxo intenso e atenção ao desnível do trem</td>
+                </tr>
+                <tr>
+                    <td>171º</td>
+                    <td>Vila Aurora</td>
+                    <td>7-Rubi</td>
+                    <td><strong>4.1</strong></td>
+                    <td>Estação mais recente com elevadores amplos e plataformas niveladas</td>
+                </tr>
+                <tr>
+                    <td>172º</td>
+                    <td>Jaraguá</td>
+                    <td>7-Rubi</td>
+                    <td><strong>3.8</strong></td>
+                    <td>Elevadores ativos e piso tátil contínuo</td>
+                </tr>
+                <tr>
+                    <td>173º</td>
+                    <td>Vila Clarice</td>
+                    <td>7-Rubi</td>
+                    <td><strong>3.7</strong></td>
+                    <td>Conta com elevadores, mas plataforma curva exige atenção no embarque</td>
+                </tr>
+                <tr>
+                    <td>174º</td>
+                    <td>Pirituba</td>
+                    <td>7-Rubi</td>
+                    <td><strong>3.9</strong></td>
+                    <td>Elevadores operacionais e ligação com terminal de ônibus</td>
+                </tr>
+                <tr>
+                    <td>175º</td>
+                    <td>Piqueri</td>
+                    <td>7-Rubi</td>
+                    <td><strong>3.8</strong></td>
+                    <td>Elevadores ativos e acesso adaptado</td>
+                </tr>
+                <tr>
+                    <td>176º</td>
+                    <td>Lapa (Linha 7)</td>
+                    <td>7-Rubi</td>
+                    <td><strong>3.7</strong></td>
+                    <td>Elevadores instalados; baldeação externa para Linha 8 exige atenção</td>
+                </tr>
+                <tr>
+                    <td>177º</td>
+                    <td>Água Branca</td>
+                    <td>7-Rubi</td>
+                    <td><strong>3.7</strong></td>
+                    <td>Em obras de expansão; conta com elevadores e apoio operacional</td>
+                </tr>
+                <tr>
+                    <td>187º</td>
+                    <td>Estação Extensão Jundiaí / Amador Bueno</td>
+                    <td>7-Rubi / 8-Diamante</td>
+                    <td><strong>3.9</strong></td>
+                    <td>Trechos operacionais complementares com plataformas adaptadas</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+                </article>
+
+                <article class="card">
+                    <img src="/ASSETS/IMG/Linha_8.png" alt="Linha 8 diamante" title="Mapa Linha 8 Diamante" loading="lazy">
+                    <div class="tabela-wrapper">
+        <table class="tabela-acessibilidade">
+            <thead>
+                <tr>
+                    <th scope="col">Posição</th>
+                    <th scope="col">Estação</th>
+                    <th scope="col">Linha(s)</th>
+                    <th scope="col">Nota</th>
+                    <th scope="col">Status / Diferencial</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>100º</td>
+                    <td>Presidente Altino</td>
+                    <td>8-Diamante / 9-Esmeralda</td>
+                    <td><strong>4.3</strong></td>
+                    <td>Transferência no mesmo nível entre plataformas, facilita baldeação PCR</td>
+                </tr>
+                <tr>
+                    <td>101º</td>
+                    <td>Osasco</td>
+                    <td>8-Diamante / 9-Esmeralda</td>
+                    <td><strong>4.3</strong></td>
+                    <td>Elevadores reformados e boa sinalização na transferência entre linhas</td>
+                </tr>
+                <tr>
+                    <td>108º</td>
+                    <td>Comandante Sampaio</td>
+                    <td>8-Diamante</td>
+                    <td><strong>4.2</strong></td>
+                    <td>Estação modernizada com elevadores novos e plataformas niveladas</td>
+                </tr>
+                <tr>
+                    <td>109º</td>
+                    <td>Quitaúna</td>
+                    <td>8-Diamante</td>
+                    <td><strong>4.2</strong></td>
+                    <td>Elevadores operacionais e acesso adaptado à passarela</td>
+                </tr>
+                <tr>
+                    <td>110º</td>
+                    <td>General Miguel Costa</td>
+                    <td>8-Diamante</td>
+                    <td><strong>4.2</strong></td>
+                    <td>Estação reconstruída nos padrões NBR 9050 com elevadores amplos</td>
+                </tr>
+                <tr>
+                    <td>111º</td>
+                    <td>Carapicuíba</td>
+                    <td>8-Diamante</td>
+                    <td><strong>4.2</strong></td>
+                    <td>Estação modernizada com elevadores novos e integração ao terminal</td>
+                </tr>
+                <tr>
+                    <td>112º</td>
+                    <td>Santa Terezinha</td>
+                    <td>8-Diamante</td>
+                    <td><strong>4.1</strong></td>
+                    <td>Elevadores ativos e piso tátil contínuo</td>
+                </tr>
+                <tr>
+                    <td>113º</td>
+                    <td>Antonio João</td>
+                    <td>8-Diamante</td>
+                    <td><strong>4.1</strong></td>
+                    <td>Passarela com elevadores operacionais e sinalização de contraste</td>
+                </tr>
+                <tr>
+                    <td>114º</td>
+                    <td>Barueri</td>
+                    <td>8-Diamante</td>
+                    <td><strong>4.2</strong></td>
+                    <td>Integração nivelada com terminal central e múltiplos elevadores</td>
+                </tr>
+                <tr>
+                    <td>115º</td>
+                    <td>Jardim Belval</td>
+                    <td>8-Diamante</td>
+                    <td><strong>4.1</strong></td>
+                    <td>Estação modernizada com elevadores ativos e rampas suaves</td>
+                </tr>
+                <tr>
+                    <td>116º</td>
+                    <td>Jardim Silveira</td>
+                    <td>8-Diamante</td>
+                    <td><strong>4.1</strong></td>
+                    <td>Elevadores operacionais e plataformas retas</td>
+                </tr>
+                <tr>
+                    <td>117º</td>
+                    <td>Jandira</td>
+                    <td>8-Diamante</td>
+                    <td><strong>4.1</strong></td>
+                    <td>Estação reformada com elevadores e acesso integrado ao terminal</td>
+                </tr>
+                <tr>
+                    <td>118º</td>
+                    <td>Sagrado Coração</td>
+                    <td>8-Diamante</td>
+                    <td><strong>4.0</strong></td>
+                    <td>Elevadores ativos e piso tátil; fluxo moderado</td>
+                </tr>
+                <tr>
+                    <td>119º</td>
+                    <td>Engenheiro Cardoso</td>
+                    <td>8-Diamante</td>
+                    <td><strong>4.0</strong></td>
+                    <td>Passarela com elevadores operacionais e rampas NBR 9050</td>
+                </tr>
+                <tr>
+                    <td>120º</td>
+                    <td>Itapevi</td>
+                    <td>8-Diamante</td>
+                    <td><strong>4.2</strong></td>
+                    <td>Terminal integrado com rampas amplas e elevadores novos</td>
+                </tr>
+                <tr>
+                    <td>121º</td>
+                    <td>Santa Rita</td>
+                    <td>8-Diamante</td>
+                    <td><strong>4.0</strong></td>
+                    <td>Estação modernizada com rampas acessíveis e piso tátil</td>
+                </tr>
+                <tr>
+                    <td>122º</td>
+                    <td>Cimenrita</td>
+                    <td>8-Diamante</td>
+                    <td><strong>3.9</strong></td>
+                    <td>Acessibilidade básica atendida com rampas e apoio operacional</td>
+                </tr>
+                <tr>
+                    <td>123º</td>
+                    <td>Ambuitá</td>
+                    <td>8-Diamante</td>
+                    <td><strong>3.9</strong></td>
+                    <td>Estação reconstruída com rampas suaves e sinalização tátil</td>
+                </tr>
+                <tr>
+                    <td>124º</td>
+                    <td>Amador Bueno</td>
+                    <td>8-Diamante</td>
+                    <td><strong>3.9</strong></td>
+                    <td>Terminal final da extensão operacional com acesso nivelado</td>
+                </tr>
+                <tr>
+                    <td>125º</td>
+                    <td>Júlio Prestes</td>
+                    <td>8-Diamante</td>
+                    <td><strong>4.2</strong></td>
+                    <td>Edifício histórico adaptado com elevadores novos e embarque nivelado</td>
+                </tr>
+                <tr>
+                    <td>126º</td>
+                    <td>Lapa (Linha 8)</td>
+                    <td>8-Diamante</td>
+                    <td><strong>3.8</strong></td>
+                    <td>Possui elevadores e piso tátil; atenção à distância na troca para Linha 7</td>
+                </tr>
+                <tr>
+                    <td>127º</td>
+                    <td>Domingos de Moraes</td>
+                    <td>8-Diamante</td>
+                    <td><strong>3.9</strong></td>
+                    <td>Elevadores ativos, mas plataforma exige atenção ao vão no embarque</td>
+                </tr>
+                <tr>
+                    <td>128º</td>
+                    <td>Imperatriz Leopoldina</td>
+                    <td>8-Diamante</td>
+                    <td><strong>4.0</strong></td>
+                    <td>Elevadores operacionais e acesso nivelado à rua</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+                </article>
+
+                <article class="card">
+                    <img src="/ASSETS/IMG/Linha_9_-_Esmeralda.png" alt="Linha 9 esmeralda" title="Mapa Linha 9 Esmeralda" loading="lazy">
+                    <div class="tabela-wrapper">
+        <table class="tabela-acessibilidade">
+            <thead>
+                <tr>
+                    <th scope="col">Posição</th>
+                    <th scope="col">Estação</th>
+                    <th scope="col">Linha(s)</th>
+                    <th scope="col">Nota</th>
+                    <th scope="col">Status / Diferencial</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>89º</td>
+                    <td>Mendes-Vila Natal</td>
+                    <td>9-Esmeralda</td>
+                    <td><strong>4.7</strong></td>
+                    <td>Estação recente com 100% de adequação NBR 9050 e múltiplos elevadores</td>
+                </tr>
+                <tr>
+                    <td>90º</td>
+                    <td>Bruno Covas-Mendes / Vila Natal</td>
+                    <td>9-Esmeralda</td>
+                    <td><strong>4.7</strong></td>
+                    <td>Rampas amplas, elevadores redundantes e terminal integrado</td>
+                </tr>
+                <tr>
+                    <td>91º</td>
+                    <td>João Dias</td>
+                    <td>9-Esmeralda</td>
+                    <td><strong>4.7</strong></td>
+                    <td>Estrutura moderna com elevadores de alta capacidade e piso tátil contínuo</td>
+                </tr>
+                <tr>
+                    <td>92º</td>
+                    <td>Morumbi</td>
+                    <td>9-Esmeralda</td>
+                    <td><strong>4.6</strong></td>
+                    <td>Plataformas retas, elevadores operacionais e acesso integrado</td>
+                </tr>
+                <tr>
+                    <td>93º</td>
+                    <td>Berrini</td>
+                    <td>9-Esmeralda</td>
+                    <td><strong>4.6</strong></td>
+                    <td>Elevadores ativos, passarelas amplas e boa sinalização tátil</td>
+                </tr>
+                <tr>
+                    <td>94º</td>
+                    <td>Vila Olímpia</td>
+                    <td>9-Esmeralda</td>
+                    <td><strong>4.6</strong></td>
+                    <td>Acessibilidade completa por elevadores e rampas dentro da norma</td>
+                </tr>
+                <tr>
+                    <td>95º</td>
+                    <td>Cidade Jardim</td>
+                    <td>9-Esmeralda</td>
+                    <td><strong>4.5</strong></td>
+                    <td>Elevadores operacionais e acesso nivelado à passarela</td>
+                </tr>
+                <tr>
+                    <td>96º</td>
+                    <td>Hebraica-Rebouças</td>
+                    <td>9-Esmeralda</td>
+                    <td><strong>4.5</strong></td>
+                    <td>Elevadores ativos e sinalização visual/sonora atualizada</td>
+                </tr>
+                <tr>
+                    <td>97º</td>
+                    <td>Cidade Universitária</td>
+                    <td>9-Esmeralda</td>
+                    <td><strong>4.4</strong></td>
+                    <td>Passarela com elevadores operacionais; atenção ao fluxo nos horários de aula</td>
+                </tr>
+                <tr>
+                    <td>98º</td>
+                    <td>Villa-Lobos-Jaguaré</td>
+                    <td>9-Esmeralda</td>
+                    <td><strong>4.4</strong></td>
+                    <td>Elevadores ativos e acesso plano ao parque e ciclovia</td>
+                </tr>
+                <tr>
+                    <td>99º</td>
+                    <td>Ceasa</td>
+                    <td>9-Esmeralda</td>
+                    <td><strong>4.3</strong></td>
+                    <td>Elevadores operacionais e plataformas retas com piso tátil</td>
+                </tr>
+                <tr>
+                    <td>102º</td>
+                    <td>Granja Julieta</td>
+                    <td>9-Esmeralda</td>
+                    <td><strong>4.3</strong></td>
+                    <td>Elevadores ativos e acesso nivelado; fluxo moderado fora do pico</td>
+                </tr>
+                <tr>
+                    <td>103º</td>
+                    <td>Socorro</td>
+                    <td>9-Esmeralda</td>
+                    <td><strong>4.3</strong></td>
+                    <td>Elevadores operacionais e rampas NBR 9050</td>
+                </tr>
+                <tr>
+                    <td>104º</td>
+                    <td>Jurubatuba</td>
+                    <td>9-Esmeralda</td>
+                    <td><strong>4.3</strong></td>
+                    <td>Acesso direto ao shopping com elevadores e piso tátil</td>
+                </tr>
+                <tr>
+                    <td>105º</td>
+                    <td>Autódromo</td>
+                    <td>9-Esmeralda</td>
+                    <td><strong>4.3</strong></td>
+                    <td>Plataformas amplas, elevadores ativos e boa sinalização</td>
+                </tr>
+                <tr>
+                    <td>106º</td>
+                    <td>Primavera-Interlagos</td>
+                    <td>9-Esmeralda</td>
+                    <td><strong>4.3</strong></td>
+                    <td>Elevadores operacionais e acesso nivelado à avenida</td>
+                </tr>
+                <tr>
+                    <td>107º</td>
+                    <td>Grajaú</td>
+                    <td>9-Esmeralda</td>
+                    <td><strong>4.3</strong></td>
+                    <td>Integração direta com terminal de ônibus por rampas e elevadores</td>
+                </tr>
+                <tr>
+                    <td>186º</td>
+                    <td>Berrini / Vila Olímpia (Integração)</td>
+                    <td>9-Esmeralda</td>
+                    <td><strong>4.5</strong></td>
+                    <td>Corredor corporativo com elevadores ativos e passarelas amplas</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>                    
+                </article>
+
+                <article class="card">
+                    <img src="/ASSETS/IMG/Linha_10_-_Turquesa_SP.png" alt="Linha 10 Turquesa " title="Mapa Linha 10 Turquesa" loading="lazy">
+                    <div class="tabela-wrapper">
+        <table class="tabela-acessibilidade">
+            <thead>
+                <tr>
+                    <th scope="col">Posição</th>
+                    <th scope="col">Estação</th>
+                    <th scope="col">Linha(s)</th>
+                    <th scope="col">Nota</th>
+                    <th scope="col">Status / Diferencial</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>150º</td>
+                    <td>Santo André</td>
+                    <td>10-Turquesa</td>
+                    <td><strong>4.3</strong></td>
+                    <td>Passarela com elevadores operacionais e acesso direto ao terminal</td>
+                </tr>
+                <tr>
+                    <td>151º</td>
+                    <td>Prefeito Celso Daniel-Santo André</td>
+                    <td>10-Turquesa</td>
+                    <td><strong>4.3</strong></td>
+                    <td>Elevadores ativos, piso tátil contínuo e integração nivelada</td>
+                </tr>
+                <tr>
+                    <td>152º</td>
+                    <td>São Caetano do Sul-Prefeito Walter Braido</td>
+                    <td>10-Turquesa</td>
+                    <td><strong>4.3</strong></td>
+                    <td>Elevadores ativos, piso tátil e plataformas niveladas</td>
+                </tr>
+                <tr>
+                    <td>153º</td>
+                    <td>Utinga</td>
+                    <td>10-Turquesa</td>
+                    <td><strong>4.0</strong></td>
+                    <td>Elevadores operacionais e acesso adaptado à passarela</td>
+                </tr>
+                <tr>
+                    <td>154º</td>
+                    <td>Prefeito Saladino</td>
+                    <td>10-Turquesa</td>
+                    <td><strong>4.0</strong></td>
+                    <td>Elevadores ativos e sinalização tátil</td>
+                </tr>
+                <tr>
+                    <td>155º</td>
+                    <td>Capuava</td>
+                    <td>10-Turquesa</td>
+                    <td><strong>3.9</strong></td>
+                    <td>Elevadores operacionais; menor fluxo e acesso adaptado</td>
+                </tr>
+                <tr>
+                    <td>156º</td>
+                    <td>Mauá</td>
+                    <td>10-Turquesa</td>
+                    <td><strong>4.1</strong></td>
+                    <td>Elevadores amplos e integração direta com terminal metropolitano</td>
+                </tr>
+                <tr>
+                    <td>157º</td>
+                    <td>Guapituba</td>
+                    <td>10-Turquesa</td>
+                    <td><strong>3.9</strong></td>
+                    <td>Elevadores ativos e piso tátil contínuo</td>
+                </tr>
+                <tr>
+                    <td>158º</td>
+                    <td>Ribeirão Pires-Antônio Bespalec</td>
+                    <td>10-Turquesa</td>
+                    <td><strong>4.0</strong></td>
+                    <td>Elevadores operacionais e acesso adaptado ao centro</td>
+                </tr>
+                <tr>
+                    <td>159º</td>
+                    <td>Rio Grande da Serra</td>
+                    <td>10-Turquesa</td>
+                    <td><strong>3.8</strong></td>
+                    <td>Terminal final com rampas acessíveis e apoio operacional</td>
+                </tr>
+                <tr>
+                    <td>160º</td>
+                    <td>Juventus-Mooca</td>
+                    <td>10-Turquesa</td>
+                    <td><strong>3.7</strong></td>
+                    <td>Estação antiga com elevadores instalados; atenção ao vão no embarque</td>
+                </tr>
+                <tr>
+                    <td>161º</td>
+                    <td>Ipiranga</td>
+                    <td>10-Turquesa</td>
+                    <td><strong>3.6</strong></td>
+                    <td>Em processo de modernização; atenção ao vão entre trem e plataforma</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</article>
+                </article>
+                    
+                <article class="card">
+                    <img src="/ASSETS/IMG/Linha_13_-_Jade_SP.png" alt="Linha 13 Jade" title="Mapa Linha 13 Jade" loading="lazy">
+                    <div class="tabela-wrapper">
+        <table class="tabela-acessibilidade">
+            <thead>
+                <tr>
+                    <th scope="col">Posição</th>
+                    <th scope="col">Estação</th>
+                    <th scope="col">Linha(s)</th>
+                    <th scope="col">Nota</th>
+                    <th scope="col">Status / Diferencial</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>86º</td>
+                    <td>Aeroporto-Guarulhos</td>
+                    <td>13-Jade</td>
+                    <td><strong>4.8</strong></td>
+                    <td>Rampas suaves, elevadores amplos e passarela nivelada até os terminais</td>
+                </tr>
+                <tr>
+                    <td>87º</td>
+                    <td>Guarulhos-Cecap</td>
+                    <td>13-Jade</td>
+                    <td><strong>4.7</strong></td>
+                    <td>Embarque nivelado, baixa lotação e sinalização sonora/visual completa</td>
+                </tr>
+                <tr>
+                    <td>88º</td>
+                    <td>Engenheiro Goulart</td>
+                    <td>13-Jade / 12-Safira</td>
+                    <td><strong>4.7</strong></td>
+                    <td>Estação reconstruída com elevadores de grande porte e plataformas retas</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+                </article>
+                <article class="card">
+                    <img src="/ASSETS/IMG/Linha15.jpg" alt="Linha 15 prata" title="Mapa Linha 15 Prata" loading="lazy">
+                    <div class="tabela-wrapper">
+        <table class="tabela-acessibilidade">
+            <thead>
+                <tr>
+                    <th scope="col">Posição</th>
+                    <th scope="col">Estação</th>
+                    <th scope="col">Linha(s)</th>
+                    <th scope="col">Nota</th>
+                    <th scope="col">Status / Diferencial</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>22º</td>
+                    <td>Oratório</td>
+                    <td>15-Prata</td>
+                    <td><strong>4.8</strong></td>
+                    <td>Monotrilho com embarque nivelado, elevadores amplos e portas automáticas</td>
+                </tr>
+                <tr>
+                    <td>23º</td>
+                    <td>São Lucas</td>
+                    <td>15-Prata</td>
+                    <td><strong>4.8</strong></td>
+                    <td>Embarque nivelado, portas automáticas e sinalização visual/sonora</td>
+                </tr>
+                <tr>
+                    <td>24º</td>
+                    <td>Camilo Haddad</td>
+                    <td>15-Prata</td>
+                    <td><strong>4.8</strong></td>
+                    <td>Acessibilidade integral desde a inauguração com elevadores redundantes</td>
+                </tr>
+                <tr>
+                    <td>25º</td>
+                    <td>Vila Tolstói</td>
+                    <td>15-Prata</td>
+                    <td><strong>4.8</strong></td>
+                    <td>Portas de plataforma, piso tátil contínuo e baixo fluxo</td>
+                </tr>
+                <tr>
+                    <td>26º</td>
+                    <td>Vila União</td>
+                    <td>15-Prata</td>
+                    <td><strong>4.8</strong></td>
+                    <td>Elevadores ativos, rotas niveladas e sinalização de alto contraste</td>
+                </tr>
+                <tr>
+                    <td>27º</td>
+                    <td>Jardim Planalto</td>
+                    <td>15-Prata</td>
+                    <td><strong>4.8</strong></td>
+                    <td>Elevadores ativos, baixo fluxo e 100% de rotas acessíveis</td>
+                </tr>
+                <tr>
+                    <td>28º</td>
+                    <td>Sapopemba</td>
+                    <td>15-Prata</td>
+                    <td><strong>4.8</strong></td>
+                    <td>Integração nivelada com terminal de ônibus e múltiplos elevadores</td>
+                </tr>
+                <tr>
+                    <td>29º</td>
+                    <td>Fazenda da Juta</td>
+                    <td>15-Prata</td>
+                    <td><strong>4.8</strong></td>
+                    <td>Portas automáticas, embarque nivelado e rotas acessíveis</td>
+                </tr>
+                <tr>
+                    <td>30º</td>
+                    <td>São Mateus</td>
+                    <td>15-Prata</td>
+                    <td><strong>4.8</strong></td>
+                    <td>Integração direta e nivelada com terminal metropolitano de ônibus</td>
+                </tr>
+                <tr>
+                    <td>31º</td>
+                    <td>Jardim Colonial</td>
+                    <td>15-Prata</td>
+                    <td><strong>4.8</strong></td>
+                    <td>Estação recente com elevadores redundantes e piso tátil contínuo</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</article>
+<h2>Não se esqueça que você também pode contribuir para as melhorias do sistema de transporte!</h2>
+        <p>De a sua opinião e relate suas experiencias aqui <i class="bi bi-arrow-right"></i> <a href="../PAGES/Palpite.html">Palpite</a></p>
+    
+            </div>
+        </section>    
+        </main>
+</body>
+<footer>
+    <div class="footer-coluna">
+        <h4 class="contato">Contato</h4>
+        <ul>
+            <li><i class="bi bi-envelope-at"></i>: SP_sobreRodas@gmail.com</li>
+            <li><i class="bi bi-telephone"></i>:<a href="tel: (11) 9999-9999"> (11) 9999-9999</a></li>
+        </ul>
+        <h4 class="redessociais">Social</h4>
+        <ul>
+            <li><i class="bi bi-instagram"></i>Spsobrerodas</li>
+            <li><i class="bi bi-twitter-x"></i>Spsobrerodas</li>
+        </ul>
+        <div class="footer-marca">
+            <img class="logo-footer" src="../IMG/sketch1794869266480.png" alt="Logo" title="cadeira de rodas">
+            <p>&copy;2026 SP- Sobre Rodas | Guia de mobilidade na grande São Paulo </p>
+        </div>
+</footer>
+</html>
